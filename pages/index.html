@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InvestWise Predictor - Empowering Smarter Investments</title>
+
+    <!-- Linking CSS files -->
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/dashboard.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="InvestWise Predictor uses AI to provide personalized investment insights and predictions tailored to your goals.">
+    <meta name="keywords" content="investment, AI predictions, smart investments, finance, personalized insights">
+    <meta name="author" content="InvestWise Team">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">InvestWise</a>
+            <ul class="nav-links">
+                <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'preferences' %}">Preferences</a></li>
+                <li><a href="{% url 'login' %}" class="btn-login">Login</a></li>
+                <li><a href="{% url 'register' %}" class="btn-register">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image Background -->
+    <header class="hero" style="background-image: url('/static/images/investment_bg.jpg');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Empower Your Investments with Data-Driven Insights</h1>
+            <p>Leverage AI-powered predictions and personalized recommendations to make smarter investments.</p>
+            <a href="{% url 'register' %}" class="cta-btn">Start Your Journey</a>
+        </div>
+    </header>
+
+    <!-- Features Section with Icons -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose InvestWise?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Accurate Predictions</h3>
+                    <p>Our advanced AI models analyze market trends and provide precise investment predictions tailored to your profile.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-user-shield feature-icon"></i>
+                    <h3>Secure Platform</h3>
+                    <p>Your data and investments are protected with industry-leading encryption and security protocols.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-balance-scale feature-icon"></i>
+                    <h3>Comprehensive Risk Analysis</h3>
+                    <p>Assess risks and opportunities with comprehensive data insights, helping you make informed decisions.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-desktop feature-icon"></i>
+                    <h3>Intuitive Dashboard</h3>
+                    <p>Track and manage your investments with a user-friendly, intuitive dashboard that provides real-time analytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Carousel Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="carousel">
+                <div class="testimonial">
+                    <p>"InvestWise helped me double my returns in just 6 months! The predictions were spot on."</p>
+                    <h4>- Alex M., Investor</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"I love the insights! It’s like having a personal financial advisor 24/7."</p>
+                    <h4>- Mary K., Entrepreneur</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The risk analysis tools are a game-changer for my business decisions."</p>
+                    <h4>- Samuel W., Business Owner</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Make Smarter Investments?</h2>
+            <p>Join thousands of investors who trust InvestWise for smarter, data-driven investments.</p>
+            <a href="{% url 'register' %}" class="cta-btn">Sign Up Today</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="{% url 'home' %}" class="footer-logo">InvestWise</a>
+                <p>Your trusted platform for personalized, AI-powered investment insights.</p>
+            </div>
+            <div class="footer-right">
+                <ul class="footer-links">
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'terms' %}">Terms of Service</a></li>
+                    <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 InvestWise Predictor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Linking JavaScript Files -->
+    <script src="/static/main.js"></script>
+    <script src="/static/carousel.js"></script>
+</body>
+</html>
