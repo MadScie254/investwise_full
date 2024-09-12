@@ -1,1 +1,16 @@
-{ "name": "InvestWise Predictor", "short_name": "InvestWise", "start_url": "/", "display": "standalone" } 
+{
+    "name": "InvestWise Predictor",
+    "short_name": "InvestWise",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1abc9c",
+    "icons": [
+      {
+        "src": "icons/favicon.ico",
+        "sizes": "48x48",
+        "type": "image/x-icon"
+      }
+    ]
+  }
+  
