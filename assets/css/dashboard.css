@@ -1,1 +1,363 @@
 /* Dashboard Styles */ 
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.navbar {
+    background-color: #282c34;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a.active,
+.navbar .nav-links a:hover {
+    color: #61dafb;
+}
+
+.dashboard-header {
+    background: linear-gradient(135deg, #61dafb, #282c34);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard-header .header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.dashboard-header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.dashboard-header .btn-primary {
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.dashboard-header .btn-primary:hover {
+    background-color: #4fa3d4;
+}
+
+.dashboard-content {
+    padding: 40px 20px;
+}
+
+.overview {
+    margin-bottom: 40px;
+}
+
+.overview .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.overview-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    max-width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.analytics {
+    margin-bottom: 40px;
+}
+
+.analytics .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.analytics-charts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.chart {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    max-width: 500px;
+    flex: 1;
+}
+
+.transactions {
+    margin-bottom: 40px;
+}
+
+.transactions .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.transactions-table th {
+    background-color: #f4f4f9;
+    font-weight: 600;
+}
+
+.transactions-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.recommendations {
+    margin-bottom: 40px;
+}
+
+.recommendations .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recommendation-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recommendation-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recommendation-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.recommendation-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.recommendation-card .btn-secondary {
+    background-color: #282c34;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.recommendation-card .btn-secondary:hover {
+    background-color: #20232a;
+}
+
+.footer {
+    background-color: #282c34;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-left {
+    max-width: 50%;
+}
+
+.footer .footer-logo {
+    font-size: 1.5rem;
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.footer .footer-content p {
+    margin: 10px 0;
+}
+
+.footer .footer-right {
+    max-width: 50%;
+    text-align: right;
+}
+
+.footer .footer-links {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer .footer-links li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .footer-links a:hover {
+    color: #61dafb;
+}
+
+.footer .social-icons {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer .social-icons li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #61dafb;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #20232a;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .overview-cards,
+    .analytics-charts,
+    .recommendation-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart,
+    .card,
+    .recommendation-card {
+        max-width: 100%;
+    }
+}
